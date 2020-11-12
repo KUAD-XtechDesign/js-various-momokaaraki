@@ -4,65 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 必要なライブラリをネット上から直接参照 CDN -->
+   
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css"/>
-    <!-- 自分のcss -->
-    <link rel="stylesheet" href="./css/style04.css" />
-    <!-- 自分のjs -->
-    <script src="./js/script04.js"></script>
-    <title>sample04</title>
+
+    
+    <link rel="stylesheet" href="../work/css/style.css" />
+    
+    <script src="../work/js/script.js"></script>
+    <title>私が観戦しに行った球場たち</title>
   </head>
-  <body>
+  <body class="one">
     <div class="wrapper">
-      
-      
+
       <header>
         <h1>site name</h1>
+        <div id="wave"></div>
+        <div id="line"></div>
       </header>
 
-      <div id="contents">
-        <div class="grid">
-          <div class="grid-item"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item">text text text text text text text text text text text text text text text text text </div>
-          <div class="grid-item"><img src="./images/back01.jpg"><p>information</p></div>
-          <div class="grid-item grid-item--width2"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item grid-item--width2"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item">text text text text text text text text text text text text text text text text text </div>
-          <div class="grid-item"><img src="./images/back01.jpg"><p>information</p></div>
-          <div class="grid-item grid-item--width2"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item grid-item--width3"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item">text text text text text text text text text text text text text text text text text </div>
-          <div class="grid-item"><img src="./images/back01.jpg"><p>information</p></div>
-          <div class="grid-item grid-item--width2"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
-          <div class="grid-item grid-item--width2"><img src="./images/back01.jpg"></div>
-          <div class="grid-item"><img src="./images/back02.jpg"></div>
-          <div class="grid-item"><img src="./images/back03.jpg"></div>
+      <div id="back">
+        <div id="backimg01" class="backimg"><img src="./images/orange.png" alt=""></div>
+        <div id="backimg02" class="backimg"><img src="./images/back02.jpg" alt=""></div>
+        <div id="backimg03" class="backimg"><img src="./images/back03.jpg" alt=""></div>
+      </div>
+
+      <ul id="menu">
+        <li id="btn01">MENU1</li>
+        <li id="btn02">MENU2</li>
+        <li id="btn03">MENU3</li>
+      </ul>
+
+      <div id="content">
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+        <div class="set"></div>
+      </div>
+
+     
+      <div class="each_work">
+        <div id="img01" class="img_button"><img src="../work/images/toukyoudome2.JPEG"></div>
+        <div id="content01" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="../work/images/jyabit.PNG" alt="ジャビット">
+            </div>
+            <div class="txt">
+              <h2>東京ドーム　</h2>
+              <div>
+                <p>東京ドームは東京都にある読売巨人軍の本拠地</p>
+                <p>
+                  屋内球場により天候の影響を受けずに試合を開催する事ができる。
+                  <br>球場中央にあるオーロラビジョンは圧巻。
+                  <br>現在首位の巨人軍の注目の選手は今年2000本安打に期待がかかる坂本、そしてここまでプロ野球記録の開幕13連勝を飾っている菅野に加え、新人王が囁かれる戸郷。投打のエースはこのままの勢いで巨人を優勝に導けるのか。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button" id="closebutton3">close</div>
+        </div>
+      </div>
+
+      <div class="each_work">
+        <div id="img02" class="img_button"><img src="../work/images/jingu2.JPEG"></div>
+        <div id="content02" class="content">
+          <div class="txt_img">
+            <div class="txt">
+              <h2>明治神宮野球場</h2>
+              <div>
+                <p>東京を本拠地とするもう一つのプロ野球チーム　東京ヤクルトスワローズの本拠地</p>
+                <p>
+                  歴史は90年を超える甲子園の次に古い野球場。開場時から残る屋外のブルペン付近のスタンドでは選手との距離が非常に近くカメラを持参するファンが多々見られる。夏は花火が上がり最高。
+                  <br>そんなヤクルトの注目の選手はプロ三年目高卒入団の村上宗隆
+                  <br>昨年はホームラン36本を放ち新人王に。今年はまだ20本と勢いが留まるも残り1ヶ月強という残り少ないシーズン、ラストスパートに期待したい。
+                </p>
+              </div>
+            </div>
+            <div class="img">
+              <img src="../work/images/tubakuro.PNG" alt="つば九郎">
+            </div>
+          </div>
+          <div class="close_button" id="close_button2">close</div>
+        </div>
+      </div>
+
+      <div class="each_work">
+        <div id="img03" class="img_button"id="img_button3"><img src="../work/images/hannsinn.JPEG"></div>
+        <div id="content03" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="../work/images/toraxtuki.PNG" alt="トラッキー">
+            </div>
+            <div class="txt">
+              <h2>阪神甲子園球場</h2>
+              <div>
+                <p>日本で最も古い甲子園球場は阪神タイガースの本拠地であると共に、日本中を沸かせる夏の高校野球の舞台でもある</p>
+                <p>
+                  春夏は高校生が熱い戦いを繰り広げる甲子園はプロ野球のシーズン中、時には厳しいヤジを飛ばすも、愛に溢れる熱狂的なタイガースファンで連日満員になる。
+                  <br>阪神は現在1位の巨人と13ゲームという厳しい状況だがエースの西をはじめ、野手には大山。すでに2年連続でシーズン100安打を放っている近本。残り試合が少なくなる中、ファンの期待に応えるラストスパートをかける事ができるか。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button" id="close_button3">close</div>
+        </div>
+      </div>
+
+      <div class="each_work">
+        <div id="img04" class="img_button"id="img_button4"><img src="../work/images/baysters.JPEG"></div>
+        <div id="content04" class="content">
+          <div class="txt_img">
+            <div class="txt">
+              <h2>横浜スタジアム</h2>
+              <div>
+                <p>スタンドの椅子からあらゆる看板まで青一色の横浜スタジアムはDeNAベイスターズの本拠地</p>
+                <p>
+                  ファンが満員になればより一層青一色に染まる横浜スタジアムは東京オリンピックで野球会場としても使用される。オリンピックは延期になってしまったものの、2021年夏は野球ファンだけでなく日本中が横浜スタジアムで熱狂するだろう
+                  <br>そんなDeNAベイスターズは現在2位の阪神と3位の中日とわずか3ゲーム差と激戦
+                  <br>残り試合が少なくなるなか今シーズンをAクラスで終わらせる事ができるか。
+                </p>
+              </div>
+            </div>
+            <div class="img">
+              <img src="../work/images/suterman.PNG" alt="スターマン">
+          </div>
+        </div>
+          <div class="close_button" id="close_button4">close</div>
         </div>
       </div>
 
